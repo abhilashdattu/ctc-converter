@@ -39,7 +39,7 @@ function getPayslipDetails() {
     providientFund.textContent = `Provident Fund: ₹${(salary*0.072).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
     professionalFund.textContent = `Professional Tax: ₹${2400}`;
     employeeProfessionalFund.textContent = `Employee Providient Fund: ₹${(salary*0.072).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    takehomeNet.textContent = `Net Salary: ${salary-(2400+(2*(salary*0.072))+(salary*0.048)).toLocaleString("en-IN",{maximumFractionDigits:2})}`
+    takehomeNet.textContent = `Net Salary: ₹${(salary-(2400+(2*(salary*0.072))+(salary*0.048))).toLocaleString("en-IN",{maximumFractionDigits:2})}`
 
 
     //Montly salary
@@ -53,7 +53,7 @@ function getPayslipDetails() {
     providientFund1.textContent = `Provident Fund: ₹${(monthlySalary*0.072).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
     professionalFund1.textContent = `Professional Tax: ₹${200}`;
     employeeProfessionalFund1.textContent = `Employee Providient Fund: ₹${(monthlySalary*0.072).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    takehomeNet1.textContent = `Net Salary: ${monthlySalary-(200+(2*(monthlySalary*0.072))+(monthlySalary*0.048)).toLocaleString('en-IN',{maximumFractionDigits:2})}`
+    takehomeNet1.textContent = `Net Salary: ₹${(monthlySalary-(200+(2*(monthlySalary*0.072))+(monthlySalary*0.048))).toLocaleString('en-IN',{maximumFractionDigits:2})}`
 }
 
 
