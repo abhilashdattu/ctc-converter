@@ -31,29 +31,29 @@ function getPayslipDetails() {
     let monthlySalary = salary/12;
 
     basicSalary.textContent = `Basic Salary: ₹${(salary*0.5).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    hra.textContent = `House Rent Allowance (H.R.A): ₹${(salary*0.25).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    travelAllowance.textContent = `Travel Allowance (T.A): ₹${(salary*0.07).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    convenyanceAllowance.textContent = `Conveyance Allowance (C.A): ₹${(salary*0.08).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    dearnessAllowance.textContent = `Dearness Allowance (D.A): ₹${(salary*0.1).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    ctc.textContent = `CTC: ₹${salary.toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    // providientFund.textContent = `Professional Tax: ₹${(((salary*0.5) + (salary*0.2) + (salary*0.1) + (salary*0.05) + (salary*0.1))*0.12).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
+    hra.textContent = `House Rent Allowance (H.R.A): ₹${(salary*0.2).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
+    // travelAllowance.textContent = `Travel Allowance (T.A): ₹${(salary*0.07).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
+    convenyanceAllowance.textContent = `Conveyance Allowance (C.A): ₹${(salary*0.3).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
+    // dearnessAllowance.textContent = `Dearness Allowance (D.A): ₹${(salary*0.1).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
+    ctc.textContent = `Medical Insurance: ₹${(salary*0.048).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
+    providientFund.textContent = `Provident Fund: ₹${(salary*0.072).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
     professionalFund.textContent = `Professional Tax: ₹${2400}`;
-    employeeProfessionalFund.textContent = `Employee Providient Fund: ₹${(salary*0.04).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    takehomeNet.textContent = `Takehome Net: ${salary-(2400+salary*0.04)}`
+    employeeProfessionalFund.textContent = `Employee Providient Fund: ₹${(salary*0.072).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
+    takehomeNet.textContent = `Net Salary: ${salary-(2400+(2*(salary*0.072))+(salary*0.048))}`
 
 
     //Montly salary
 
     basicSalary1.textContent = `Basic Salary:  ₹${(monthlySalary*0.5).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    hra1.textContent = `House Rent Allowance (H.R.A): ₹${(monthlySalary*0.25).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    travelAllowance1.textContent = `Travel Allowance (T.A): ₹${(monthlySalary*0.07).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    convenyanceAllowance1.textContent = `Conveyance Allowance (C.A): ₹${(monthlySalary*0.08).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    dearnessAllowance1.textContent = `Dearness Allowance (D.A): ₹${(monthlySalary*0.1).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    ctc1.textContent = `CTC: ₹${monthlySalary.toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    // providientFund.textContent = `Professional Tax: ₹${(((monthlySalary*0.5) + (monthlySalary*0.2) + (monthlySalary*0.1) + (monthlySalary*0.05) + (monthlySalary*0.1))*0.12).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
+    hra1.textContent = `House Rent Allowance (H.R.A): ₹${(monthlySalary*0.2).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
+    // travelAllowance1.textContent = `Travel Allowance (T.A): ₹${(monthlySalary*0.3).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
+    convenyanceAllowance1.textContent = `Conveyance Allowance (C.A): ₹${(monthlySalary*0.3).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
+    // dearnessAllowance1.textContent = `Dearness Allowance (D.A): ₹${(monthlySalary*0.1).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
+    ctc1.textContent = `Medical Insurance: ₹${(monthlySalary*0.048).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
+    providientFund1.textContent = `Provident Fund: ₹${(monthlySalary*0.072).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
     professionalFund1.textContent = `Professional Tax: ₹${200}`;
-    employeeProfessionalFund1.textContent = `Employee Providient Fund: ₹${(monthlySalary*0.04).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
-    takehomeNet1.textContent = `Takehome Net: ${monthlySalary-(200+monthlySalary*0.04)}`
+    employeeProfessionalFund1.textContent = `Employee Providient Fund: ₹${(monthlySalary*0.072).toLocaleString('en-IN', { maximumFractionDigits: 2 })}`;
+    takehomeNet1.textContent = `Net Salary: ${monthlySalary-(200+(2*(monthlySalary*0.072))+(monthlySalary*0.048))}`
 }
 
 
